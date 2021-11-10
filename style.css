@@ -315,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-area: auto;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem ;
   }
 
   .charities-box {
@@ -323,9 +324,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     padding: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 1rem;
     
   }
 
+  .charities-box:hover {
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3);
+  }
  
 
   .charities-box > img {
@@ -400,45 +406,44 @@ h1, h2, h3, h4, h5, h6 {
 
  .contact-bio {
   color: #fff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
  }
 
- .contact-bio-jim {
+ .contact-bio-card {
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 3rem;
+  box-shadow: 4px 8px 16px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 0 1rem;
+}
 
-   justify-content: center;
-   padding-left: 2rem;
-   display: flex;
-   flex-direction: column;
-   flex-basis: 100%;
-   width: 100%;
-   margin-bottom: 3rem;
+.contact-bio-card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+ .contact-bio-card > img {
+   height:400px;
+   width: 150px;
  }
 
- .jim-img {
-   width: 100%;
-   justify-content: center;
-   align-items: center;
- }
  
- .jim-img > img {
-   border: black 1px solid;
-   height:200px;
-   width: 300px;
- }
 
- .jim-txt {
-   margin-right: 15rem;
-   display: flex;
-   flex-direction: column;
-   width: 100%;
- }
-
- .jim-socials {
+ .contact-socials {
    justify-content: center;
    align-items: center;
-   padding-right: 5rem;
+   margin-left: 7rem;
    margin-top: 2rem;
    font-size: 3rem;
  }
@@ -485,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
  }
 
-.contact-bio-jim {
+.contact-bio-card {
   justify-content: center;
   padding-left: 2rem;
   display: flex;
@@ -549,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
    }
 
-   .contact-bio-jim {
+   .contact-bio-card {
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -559,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.jim-socials {
+.contact-socials {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
