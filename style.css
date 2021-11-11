@@ -313,7 +313,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin-top: 3rem;
     display: grid;
-    grid-area: auto;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 1rem ;
   }
@@ -374,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     line-height: 4rem;
     word-spacing: 3px;
     padding: 0 5rem ;
@@ -387,10 +386,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .Fb-page {
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    padding-left: 3.5rem;
     height: 100%;
   }
 
@@ -455,7 +453,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   text-align: center;
   background-color: #bbb;
-  border: solid 1px;
   padding: 2rem;
 }
 
@@ -532,6 +529,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #Support > div {
@@ -544,6 +543,19 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 1024px) {
 
   
+.logo {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+  .charities-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
 
 
   .contact-bio {
